@@ -1,0 +1,266 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1.3vw;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    height: 64px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: auto 24px auto;
+}
+
+li {
+    justify-content: right;
+    padding-left: 16px;
+}
+
+h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 32px;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+button {
+    background-color: rgb(83, 83, 83);
+    color: white;
+    cursor: pointer;
+    padding: 8px 0px;
+    width: 100%;
+}
+
+footer {
+    padding: 16px 24px; 
+    border-top: 1px solid lightgray;
+}
+
+.topBar {
+    align-items: center;
+    height: 64px;
+    display: flex;
+    z-index: 1;
+}
+
+.desktop a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile {
+    display: none;
+    padding: 0px auto;
+}
+
+.logo {
+    padding-left: 24px;
+    font-size: 1.6vw;
+}
+
+.banner {
+    padding-top: 64px;
+    display: flex;
+}
+
+.banner h3 {
+    margin: 24px 0;
+}
+
+.bannerImg {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.bannerRight {
+    width: 40%;
+    margin: auto 40px auto 16px;
+}
+
+.infoLeft {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.infoRight {
+    width: 40%;
+    padding: 16px 0px;
+}
+
+.eachInfo {
+    display: flex;
+    padding: 16px;
+}
+
+.eachInfo img {
+    width: 35%;
+    margin: auto 0px;
+}
+
+.description {
+    margin: auto 16px;
+}
+
+.cardRow {
+    margin: 32px 56px;
+    display: flex;
+}
+
+.card {
+    margin: 0px 16px;
+    width: 100%;
+}
+
+.cardContent {
+    margin: 16px;
+}
+
+.thesisLeft {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.thesisRight {
+    width: 40%; 
+    margin: 32px 0px;
+}
+
+/* Public Style*/
+.d-f {
+    display: flex;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.bg-gray{
+    background-color: lightgray;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+    .desktop,
+    .infoLeft,
+    .cardRow img,
+    .cardRow p,
+    .thesisLeft h3,
+    .thesisLeft p,
+    .thesisRight {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+        width: 100%;
+    }
+        
+    .bg-gray {
+        background-color: white;
+    }
+
+    body {
+        font-size: 2.5vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        margin-bottom: 16px !important;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    .icon {
+        margin: 0 auto;
+    }
+    
+    .banner {
+        flex-wrap: wrap;
+        background-color: lightgray;
+    }
+    
+    .bannerImg {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .bannerRight {
+        width: 100%;
+        margin: 32px 16px;
+    }
+
+    .infoRight {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .eachInfo {
+        flex-wrap: wrap;
+    }
+
+    .eachInfo img {
+        width: 100%;
+    }
+
+    .description {
+        margin: 32px 16px;
+    }
+    
+    .cardRow {
+        flex-wrap: wrap;
+        margin: 0px 16px;
+    }
+    
+    .cardRow h3 {
+        margin: 0px 16px;
+    }
+
+    .card {
+        border: 0px;
+        width: 100%;
+        margin: 8px;
+        background-color: lightgrey;
+    }
+
+    .thesisLeft {
+        width: 100%;
+        padding-top: 0px;
+    }
+}
